@@ -2,7 +2,7 @@
 Library    ExcelLibrary   
 Library    Screenshot
 
-Resource    ../Resources/login_test.robot
+Resource   ../../Resources/login_test.robot
 *** Variables ***
 ${filepath}    /Users/venkatabandi/google_backup/test_automation/robot-test-automation-sauce-demo/Data/mock_user_data.xlsx
 
