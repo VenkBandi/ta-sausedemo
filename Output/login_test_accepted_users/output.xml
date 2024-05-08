@@ -1,0 +1,457 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.11.5 on darwin)" generated="2024-05-08T17:38:22.948689" rpa="false" schemaversion="5">
+<suite id="s1" name="Login Test Accepted Users" source="/Users/venkatabandi/google_backup/test_automation/robot-test-automation-sauce-demo/Tests/prod/login_test_accepted_users.robot">
+<test id="s1-t1" name="LoginTestwithAcceptedUsernames" line="12">
+<kw name="Valid login">
+<kw name="Open my Browser" owner="login_test">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-05-08T17:38:24.542445" level="INFO">Opening browser 'Chrome' to base url 'https://www.saucedemo.com/'.</msg>
+<arg>${URL}</arg>
+<arg>browser=${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-05-08T17:38:24.541966" elapsed="3.051109"/>
+</kw>
+<kw name="Set Window Position" owner="SeleniumLibrary">
+<arg>0</arg>
+<arg>0</arg>
+<doc>Sets window position using ``x`` and ``y`` coordinates.</doc>
+<status status="PASS" start="2024-05-08T17:38:27.593866" elapsed="0.327854"/>
+</kw>
+<kw name="Set Window Size" owner="SeleniumLibrary">
+<arg>960</arg>
+<arg>1000</arg>
+<doc>Sets current windows size to given ``width`` and ``height``.</doc>
+<status status="PASS" start="2024-05-08T17:38:27.921917" elapsed="0.057195"/>
+</kw>
+<status status="PASS" start="2024-05-08T17:38:24.541061" elapsed="3.438267"/>
+</kw>
+<kw name="Input username" owner="login_test">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-05-08T17:38:27.981346" level="INFO">Typing text 'standard_user' into text field 'id=user-name'.</msg>
+<arg>id=user-name</arg>
+<arg>${username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-08T17:38:27.980284" elapsed="0.263941"/>
+</kw>
+<arg>${username}</arg>
+<status status="PASS" start="2024-05-08T17:38:27.979719" elapsed="0.264656"/>
+</kw>
+<kw name="Input pwd" owner="login_test">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-05-08T17:38:28.245218" level="INFO">Typing text 'secret_sauce' into text field 'id=password'.</msg>
+<arg>id=password</arg>
+<arg>${password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-08T17:38:28.244982" elapsed="0.100012"/>
+</kw>
+<arg>${password}</arg>
+<status status="PASS" start="2024-05-08T17:38:28.244594" elapsed="0.100565"/>
+</kw>
+<kw name="Click login button" owner="login_test">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-05-08T17:38:28.346693" level="INFO">Clicking button 'id=login-button'.</msg>
+<arg>id=login-button</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-08T17:38:28.346321" elapsed="0.118199"/>
+</kw>
+<status status="PASS" start="2024-05-08T17:38:28.345501" elapsed="0.119259"/>
+</kw>
+<kw name="Welcome page should be visible" owner="login_test">
+<kw name="Page Should Contain Element" owner="SeleniumLibrary">
+<msg time="2024-05-08T17:38:28.481780" level="INFO">Current page contains element 'xpath=//*[@id="shopping_cart_container"]'.</msg>
+<arg>xpath=//*[@id="shopping_cart_container"]</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<status status="PASS" start="2024-05-08T17:38:28.465947" elapsed="0.015963"/>
+</kw>
+<status status="PASS" start="2024-05-08T17:38:28.465068" elapsed="0.016998"/>
+</kw>
+<arg>username=standard_user</arg>
+<arg>password=secret_sauce</arg>
+<tag>Acceptedusers</tag>
+<status status="PASS" start="2024-05-08T17:38:24.540598" elapsed="3.941567"/>
+</kw>
+<status status="PASS" start="2024-05-08T17:38:24.539238" elapsed="3.943270"/>
+</test>
+<test id="s1-t2" name="LoginTestwithAcceptedUsernames" line="12">
+<kw name="Valid login">
+<kw name="Open my Browser" owner="login_test">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-05-08T17:38:28.486209" level="INFO">Opening browser 'Chrome' to base url 'https://www.saucedemo.com/'.</msg>
+<arg>${URL}</arg>
+<arg>browser=${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-05-08T17:38:28.485831" elapsed="2.686184"/>
+</kw>
+<kw name="Set Window Position" owner="SeleniumLibrary">
+<arg>0</arg>
+<arg>0</arg>
+<doc>Sets window position using ``x`` and ``y`` coordinates.</doc>
+<status status="PASS" start="2024-05-08T17:38:31.172883" elapsed="0.330905"/>
+</kw>
+<kw name="Set Window Size" owner="SeleniumLibrary">
+<arg>960</arg>
+<arg>1000</arg>
+<doc>Sets current windows size to given ``width`` and ``height``.</doc>
+<status status="PASS" start="2024-05-08T17:38:31.504033" elapsed="0.056979"/>
+</kw>
+<status status="PASS" start="2024-05-08T17:38:28.485481" elapsed="3.075690"/>
+</kw>
+<kw name="Input username" owner="login_test">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-05-08T17:38:31.562296" level="INFO">Typing text 'locked_out_user' into text field 'id=user-name'.</msg>
+<arg>id=user-name</arg>
+<arg>${username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-08T17:38:31.561846" elapsed="0.265691"/>
+</kw>
+<arg>${username}</arg>
+<status status="PASS" start="2024-05-08T17:38:31.561433" elapsed="0.266329"/>
+</kw>
+<kw name="Input pwd" owner="login_test">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-05-08T17:38:31.829498" level="INFO">Typing text 'secret_sauce' into text field 'id=password'.</msg>
+<arg>id=password</arg>
+<arg>${password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-08T17:38:31.829159" elapsed="0.131879"/>
+</kw>
+<arg>${password}</arg>
+<status status="PASS" start="2024-05-08T17:38:31.828300" elapsed="0.132999"/>
+</kw>
+<kw name="Click login button" owner="login_test">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-05-08T17:38:31.962578" level="INFO">Clicking button 'id=login-button'.</msg>
+<arg>id=login-button</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-08T17:38:31.962339" elapsed="0.086603"/>
+</kw>
+<status status="PASS" start="2024-05-08T17:38:31.961594" elapsed="0.087607"/>
+</kw>
+<kw name="Welcome page should be visible" owner="login_test">
+<kw name="Page Should Contain Element" owner="SeleniumLibrary">
+<msg time="2024-05-08T17:38:32.176829" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2024-05-08T17:38:32.177363" level="FAIL">Page should have contained element 'xpath=//*[@id="shopping_cart_container"]' but did not.</msg>
+<arg>xpath=//*[@id="shopping_cart_container"]</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<status status="FAIL" start="2024-05-08T17:38:32.050149" elapsed="0.134463">Page should have contained element 'xpath=//*[@id="shopping_cart_container"]' but did not.</status>
+</kw>
+<status status="FAIL" start="2024-05-08T17:38:32.049536" elapsed="0.135591">Page should have contained element 'xpath=//*[@id="shopping_cart_container"]' but did not.</status>
+</kw>
+<arg>username=locked_out_user</arg>
+<arg>password=secret_sauce</arg>
+<tag>Acceptedusers</tag>
+<status status="FAIL" start="2024-05-08T17:38:28.485084" elapsed="3.700509">Page should have contained element 'xpath=//*[@id="shopping_cart_container"]' but did not.</status>
+</kw>
+<status status="FAIL" start="2024-05-08T17:38:28.483442" elapsed="3.703122">Page should have contained element 'xpath=//*[@id="shopping_cart_container"]' but did not.</status>
+</test>
+<test id="s1-t3" name="LoginTestwithAcceptedUsernames" line="12">
+<kw name="Valid login">
+<kw name="Open my Browser" owner="login_test">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-05-08T17:38:32.191404" level="INFO">Opening browser 'Chrome' to base url 'https://www.saucedemo.com/'.</msg>
+<arg>${URL}</arg>
+<arg>browser=${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-05-08T17:38:32.190942" elapsed="2.718074"/>
+</kw>
+<kw name="Set Window Position" owner="SeleniumLibrary">
+<arg>0</arg>
+<arg>0</arg>
+<doc>Sets window position using ``x`` and ``y`` coordinates.</doc>
+<status status="PASS" start="2024-05-08T17:38:34.919079" elapsed="0.341373"/>
+</kw>
+<kw name="Set Window Size" owner="SeleniumLibrary">
+<arg>960</arg>
+<arg>1000</arg>
+<doc>Sets current windows size to given ``width`` and ``height``.</doc>
+<status status="PASS" start="2024-05-08T17:38:35.260767" elapsed="0.071384"/>
+</kw>
+<status status="PASS" start="2024-05-08T17:38:32.190594" elapsed="3.141793"/>
+</kw>
+<kw name="Input username" owner="login_test">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-05-08T17:38:35.333694" level="INFO">Typing text 'problem_user' into text field 'id=user-name'.</msg>
+<arg>id=user-name</arg>
+<arg>${username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-08T17:38:35.333359" elapsed="0.347950"/>
+</kw>
+<arg>${username}</arg>
+<status status="PASS" start="2024-05-08T17:38:35.332799" elapsed="0.348751"/>
+</kw>
+<kw name="Input pwd" owner="login_test">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-05-08T17:38:35.682623" level="INFO">Typing text 'secret_sauce' into text field 'id=password'.</msg>
+<arg>id=password</arg>
+<arg>${password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-08T17:38:35.682281" elapsed="0.163467"/>
+</kw>
+<arg>${password}</arg>
+<status status="PASS" start="2024-05-08T17:38:35.681806" elapsed="0.164186"/>
+</kw>
+<kw name="Click login button" owner="login_test">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-05-08T17:38:35.847462" level="INFO">Clicking button 'id=login-button'.</msg>
+<arg>id=login-button</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-08T17:38:35.847111" elapsed="0.149323"/>
+</kw>
+<status status="PASS" start="2024-05-08T17:38:35.846463" elapsed="0.150173"/>
+</kw>
+<kw name="Welcome page should be visible" owner="login_test">
+<kw name="Page Should Contain Element" owner="SeleniumLibrary">
+<msg time="2024-05-08T17:38:36.013669" level="INFO">Current page contains element 'xpath=//*[@id="shopping_cart_container"]'.</msg>
+<arg>xpath=//*[@id="shopping_cart_container"]</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<status status="PASS" start="2024-05-08T17:38:35.997444" elapsed="0.016369"/>
+</kw>
+<status status="PASS" start="2024-05-08T17:38:35.996930" elapsed="0.017042"/>
+</kw>
+<arg>username=problem_user</arg>
+<arg>password=secret_sauce</arg>
+<tag>Acceptedusers</tag>
+<status status="PASS" start="2024-05-08T17:38:32.189953" elapsed="3.824139"/>
+</kw>
+<status status="PASS" start="2024-05-08T17:38:32.187780" elapsed="3.826813"/>
+</test>
+<test id="s1-t4" name="LoginTestwithAcceptedUsernames" line="12">
+<kw name="Valid login">
+<kw name="Open my Browser" owner="login_test">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-05-08T17:38:36.020045" level="INFO">Opening browser 'Chrome' to base url 'https://www.saucedemo.com/'.</msg>
+<arg>${URL}</arg>
+<arg>browser=${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-05-08T17:38:36.019369" elapsed="3.440661"/>
+</kw>
+<kw name="Set Window Position" owner="SeleniumLibrary">
+<arg>0</arg>
+<arg>0</arg>
+<doc>Sets window position using ``x`` and ``y`` coordinates.</doc>
+<status status="PASS" start="2024-05-08T17:38:39.461091" elapsed="0.332780"/>
+</kw>
+<kw name="Set Window Size" owner="SeleniumLibrary">
+<arg>960</arg>
+<arg>1000</arg>
+<doc>Sets current windows size to given ``width`` and ``height``.</doc>
+<status status="PASS" start="2024-05-08T17:38:39.794262" elapsed="0.074089"/>
+</kw>
+<status status="PASS" start="2024-05-08T17:38:36.018639" elapsed="3.850031"/>
+</kw>
+<kw name="Input username" owner="login_test">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-05-08T17:38:39.870362" level="INFO">Typing text 'performance_glitch_user' into text field 'id=user-name'.</msg>
+<arg>id=user-name</arg>
+<arg>${username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-08T17:38:39.869841" elapsed="0.341912"/>
+</kw>
+<arg>${username}</arg>
+<status status="PASS" start="2024-05-08T17:38:39.869113" elapsed="0.342824"/>
+</kw>
+<kw name="Input pwd" owner="login_test">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-05-08T17:38:40.213106" level="INFO">Typing text 'secret_sauce' into text field 'id=password'.</msg>
+<arg>id=password</arg>
+<arg>${password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-08T17:38:40.212759" elapsed="0.170801"/>
+</kw>
+<arg>${password}</arg>
+<status status="PASS" start="2024-05-08T17:38:40.212226" elapsed="0.171523"/>
+</kw>
+<kw name="Click login button" owner="login_test">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-05-08T17:38:40.384907" level="INFO">Clicking button 'id=login-button'.</msg>
+<arg>id=login-button</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-08T17:38:40.384544" elapsed="5.141605"/>
+</kw>
+<status status="PASS" start="2024-05-08T17:38:40.384051" elapsed="5.142361"/>
+</kw>
+<kw name="Welcome page should be visible" owner="login_test">
+<kw name="Page Should Contain Element" owner="SeleniumLibrary">
+<msg time="2024-05-08T17:38:45.543554" level="INFO">Current page contains element 'xpath=//*[@id="shopping_cart_container"]'.</msg>
+<arg>xpath=//*[@id="shopping_cart_container"]</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<status status="PASS" start="2024-05-08T17:38:45.527317" elapsed="0.016389"/>
+</kw>
+<status status="PASS" start="2024-05-08T17:38:45.526725" elapsed="0.017362"/>
+</kw>
+<arg>username=performance_glitch_user</arg>
+<arg>password=secret_sauce</arg>
+<tag>Acceptedusers</tag>
+<status status="PASS" start="2024-05-08T17:38:36.017927" elapsed="9.526373"/>
+</kw>
+<status status="PASS" start="2024-05-08T17:38:36.015516" elapsed="9.529600"/>
+</test>
+<test id="s1-t5" name="LoginTestwithAcceptedUsernames" line="12">
+<kw name="Valid login">
+<kw name="Open my Browser" owner="login_test">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-05-08T17:38:45.552027" level="INFO">Opening browser 'Chrome' to base url 'https://www.saucedemo.com/'.</msg>
+<arg>${URL}</arg>
+<arg>browser=${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-05-08T17:38:45.551168" elapsed="4.437026"/>
+</kw>
+<kw name="Set Window Position" owner="SeleniumLibrary">
+<arg>0</arg>
+<arg>0</arg>
+<doc>Sets window position using ``x`` and ``y`` coordinates.</doc>
+<status status="PASS" start="2024-05-08T17:38:49.989156" elapsed="0.328413"/>
+</kw>
+<kw name="Set Window Size" owner="SeleniumLibrary">
+<arg>960</arg>
+<arg>1000</arg>
+<doc>Sets current windows size to given ``width`` and ``height``.</doc>
+<status status="PASS" start="2024-05-08T17:38:50.317888" elapsed="0.082251"/>
+</kw>
+<status status="PASS" start="2024-05-08T17:38:45.550146" elapsed="4.850339"/>
+</kw>
+<kw name="Input username" owner="login_test">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-05-08T17:38:50.402225" level="INFO">Typing text 'error_user' into text field 'id=user-name'.</msg>
+<arg>id=user-name</arg>
+<arg>${username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-08T17:38:50.401873" elapsed="0.352290"/>
+</kw>
+<arg>${username}</arg>
+<status status="PASS" start="2024-05-08T17:38:50.401029" elapsed="0.353334"/>
+</kw>
+<kw name="Input pwd" owner="login_test">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-05-08T17:38:50.755594" level="INFO">Typing text 'secret_sauce' into text field 'id=password'.</msg>
+<arg>id=password</arg>
+<arg>${password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-08T17:38:50.755248" elapsed="0.151253"/>
+</kw>
+<arg>${password}</arg>
+<status status="PASS" start="2024-05-08T17:38:50.754653" elapsed="0.185800"/>
+</kw>
+<kw name="Click login button" owner="login_test">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-05-08T17:38:50.941596" level="INFO">Clicking button 'id=login-button'.</msg>
+<arg>id=login-button</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-08T17:38:50.941255" elapsed="0.162553"/>
+</kw>
+<status status="PASS" start="2024-05-08T17:38:50.940744" elapsed="0.163285"/>
+</kw>
+<kw name="Welcome page should be visible" owner="login_test">
+<kw name="Page Should Contain Element" owner="SeleniumLibrary">
+<msg time="2024-05-08T17:38:51.127293" level="INFO">Current page contains element 'xpath=//*[@id="shopping_cart_container"]'.</msg>
+<arg>xpath=//*[@id="shopping_cart_container"]</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<status status="PASS" start="2024-05-08T17:38:51.105154" elapsed="0.022295"/>
+</kw>
+<status status="PASS" start="2024-05-08T17:38:51.104505" elapsed="0.023142"/>
+</kw>
+<arg>username=error_user</arg>
+<arg>password=secret_sauce</arg>
+<tag>Acceptedusers</tag>
+<status status="PASS" start="2024-05-08T17:38:45.549131" elapsed="5.578651"/>
+</kw>
+<status status="PASS" start="2024-05-08T17:38:45.546077" elapsed="5.582619"/>
+</test>
+<test id="s1-t6" name="LoginTestwithAcceptedUsernames" line="12">
+<kw name="Valid login">
+<kw name="Open my Browser" owner="login_test">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-05-08T17:38:51.136075" level="INFO">Opening browser 'Chrome' to base url 'https://www.saucedemo.com/'.</msg>
+<arg>${URL}</arg>
+<arg>browser=${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-05-08T17:38:51.135258" elapsed="3.916553"/>
+</kw>
+<kw name="Set Window Position" owner="SeleniumLibrary">
+<arg>0</arg>
+<arg>0</arg>
+<doc>Sets window position using ``x`` and ``y`` coordinates.</doc>
+<status status="PASS" start="2024-05-08T17:38:55.052895" elapsed="0.348558"/>
+</kw>
+<kw name="Set Window Size" owner="SeleniumLibrary">
+<arg>960</arg>
+<arg>1000</arg>
+<doc>Sets current windows size to given ``width`` and ``height``.</doc>
+<status status="PASS" start="2024-05-08T17:38:55.401766" elapsed="0.112403"/>
+</kw>
+<status status="PASS" start="2024-05-08T17:38:51.134571" elapsed="4.379893"/>
+</kw>
+<kw name="Input username" owner="login_test">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-05-08T17:38:55.516601" level="INFO">Typing text 'visual_user' into text field 'id=user-name'.</msg>
+<arg>id=user-name</arg>
+<arg>${username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-08T17:38:55.516031" elapsed="0.528420"/>
+</kw>
+<arg>${username}</arg>
+<status status="PASS" start="2024-05-08T17:38:55.515000" elapsed="0.529683"/>
+</kw>
+<kw name="Input pwd" owner="login_test">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-05-08T17:38:56.046141" level="INFO">Typing text 'secret_sauce' into text field 'id=password'.</msg>
+<arg>id=password</arg>
+<arg>${password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-08T17:38:56.045707" elapsed="0.170106"/>
+</kw>
+<arg>${password}</arg>
+<status status="PASS" start="2024-05-08T17:38:56.044984" elapsed="0.171033"/>
+</kw>
+<kw name="Click login button" owner="login_test">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-05-08T17:38:56.217433" level="INFO">Clicking button 'id=login-button'.</msg>
+<arg>id=login-button</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-08T17:38:56.217056" elapsed="0.371899"/>
+</kw>
+<status status="PASS" start="2024-05-08T17:38:56.216308" elapsed="0.372953"/>
+</kw>
+<kw name="Welcome page should be visible" owner="login_test">
+<kw name="Page Should Contain Element" owner="SeleniumLibrary">
+<msg time="2024-05-08T17:38:56.620320" level="INFO">Current page contains element 'xpath=//*[@id="shopping_cart_container"]'.</msg>
+<arg>xpath=//*[@id="shopping_cart_container"]</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<status status="PASS" start="2024-05-08T17:38:56.590206" elapsed="0.030283"/>
+</kw>
+<status status="PASS" start="2024-05-08T17:38:56.589576" elapsed="0.031099"/>
+</kw>
+<arg>username=visual_user</arg>
+<arg>password=secret_sauce</arg>
+<tag>Acceptedusers</tag>
+<status status="PASS" start="2024-05-08T17:38:51.133592" elapsed="5.487219"/>
+</kw>
+<status status="PASS" start="2024-05-08T17:38:51.130355" elapsed="5.491086"/>
+</test>
+<kw name="Close Browsers" owner="login_test" type="TEARDOWN">
+<kw name="Close All Browsers" owner="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" start="2024-05-08T17:38:56.623252" elapsed="2.490881"/>
+</kw>
+<status status="PASS" start="2024-05-08T17:38:56.622832" elapsed="2.491437"/>
+</kw>
+<status status="FAIL" start="2024-05-08T17:38:22.950055" elapsed="36.164272"/>
+</suite>
+<statistics>
+<total>
+<stat pass="5" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="5" fail="1" skip="0" id="s1" name="Login Test Accepted Users">Login Test Accepted Users</stat>
+</suite>
+</statistics>
+<errors>
+<msg time="2024-05-08T17:38:28.483289" level="WARN">Multiple tests with name 'LoginTestwithAcceptedUsernames' executed in suite 'Login Test Accepted Users'.</msg>
+<msg time="2024-05-08T17:38:32.187611" level="WARN">Multiple tests with name 'LoginTestwithAcceptedUsernames' executed in suite 'Login Test Accepted Users'.</msg>
+<msg time="2024-05-08T17:38:36.015273" level="WARN">Multiple tests with name 'LoginTestwithAcceptedUsernames' executed in suite 'Login Test Accepted Users'.</msg>
+<msg time="2024-05-08T17:38:45.545899" level="WARN">Multiple tests with name 'LoginTestwithAcceptedUsernames' executed in suite 'Login Test Accepted Users'.</msg>
+<msg time="2024-05-08T17:38:51.130125" level="WARN">Multiple tests with name 'LoginTestwithAcceptedUsernames' executed in suite 'Login Test Accepted Users'.</msg>
+</errors>
+</robot>
