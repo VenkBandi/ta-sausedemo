@@ -1,5 +1,5 @@
 *** Settings ***
-Library    ExcelLibrary   
+Library    E   
 Library    SeleniumLibrary
 Library    Screenshot
 Library    Collections
@@ -11,8 +11,8 @@ ${filepath}    /Users/venkatabandi/google_backup/test_automation/robot-test-auto
 
 *** Test Cases ***
 Log in test
-    @{result}    Read Excel    ${filepath}    Sheet1    1    1    1
-    Log Many    @{result}
+    ${result}=    Read Excel    ${filepath}    Sheet1    1    1    1
+    Log    ${result}
 
 *** Keywords ***
 Setup Browser
@@ -23,6 +23,6 @@ Read Excel
     [Arguments]     ${filepath}    ${sheetname}    ${offset}    ${username_column}    ${password_column}
     Open Excel Document    ${filepath}       1
     Get Sheet    ${sheetname}
-    @{username}    Read Excel Column    ${username_column}    ${offset}
-    [Return]    @{username}   
+    ${username}    Read Excel Column    ${username_column}    ${offset}
+    [Return]    ${username}   
     Close Current Excel Document

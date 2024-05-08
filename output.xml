@@ -1,131 +1,159 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.0 (Python 3.11.5 on darwin)" generated="2024-05-08T10:25:50.567123" rpa="false" schemaversion="5">
-<suite id="s1" name="Excel One User Credential" source="/Users/venkatabandi/google_backup/test_automation/robot-test-automation-sauce-demo/Tests/excel_one_user_credential.robot">
-<test id="s1-t1" name="Log in test" line="12">
+<robot generator="Robot 7.0 (Python 3.11.5 on darwin)" generated="2024-05-08T11:50:23.626811" rpa="false" schemaversion="5">
+<suite id="s1" name="Logintest Accepted Users" source="/Users/venkatabandi/google_backup/test_automation/robot-test-automation-sauce-demo/Tests/logintest_accepted_users.robot">
+<test id="s1-t1" name="Log in test" line="11">
 <kw name="Read Excel">
 <kw name="Open Excel Document" owner="ExcelLibrary">
 <arg>${filepath}</arg>
 <arg>1</arg>
 <doc>Opens xlsx document file.</doc>
-<status status="PASS" start="2024-05-08T10:25:51.307176" elapsed="0.009831"/>
+<status status="PASS" start="2024-05-08T11:50:24.208225" elapsed="0.006035"/>
 </kw>
 <kw name="Get Sheet" owner="ExcelLibrary">
 <arg>${sheetname}</arg>
 <doc>Returns a page from the current document.</doc>
-<status status="PASS" start="2024-05-08T10:25:51.317253" elapsed="0.000245"/>
+<status status="PASS" start="2024-05-08T11:50:24.214465" elapsed="0.000207"/>
 </kw>
 <kw name="Read Excel Cell" owner="ExcelLibrary">
-<msg time="2024-05-08T10:25:51.318046" level="INFO">${username} = standard_user</msg>
+<msg time="2024-05-08T11:50:24.215008" level="INFO">${username} = standard_user</msg>
 <var>${username}</var>
 <arg>${rownum}</arg>
 <arg>${column1}</arg>
 <doc>Returns content of a cell.</doc>
-<status status="PASS" start="2024-05-08T10:25:51.317669" elapsed="0.000426"/>
+<status status="PASS" start="2024-05-08T11:50:24.214797" elapsed="0.000243"/>
 </kw>
 <kw name="Read Excel Cell" owner="ExcelLibrary">
-<msg time="2024-05-08T10:25:51.318697" level="INFO">${password} = secret_sauce</msg>
+<msg time="2024-05-08T11:50:24.215350" level="INFO">${password} = secret_sauce</msg>
 <var>${password}</var>
 <arg>${rownum}</arg>
 <arg>${column2}</arg>
 <doc>Returns content of a cell.</doc>
-<status status="PASS" start="2024-05-08T10:25:51.318380" elapsed="0.000355"/>
+<status status="PASS" start="2024-05-08T11:50:24.215160" elapsed="0.000215"/>
 </kw>
 <kw name="Close Current Excel Document" owner="ExcelLibrary">
 <doc>Closes current document.</doc>
-<status status="PASS" start="2024-05-08T10:25:51.319008" elapsed="0.000157"/>
+<status status="PASS" start="2024-05-08T11:50:24.215486" elapsed="0.000087"/>
 </kw>
 <return>
 <value>${username}</value>
 <value>${password}</value>
-<status status="PASS" start="2024-05-08T10:25:51.319245" elapsed="0.000066"/>
+<status status="PASS" start="2024-05-08T11:50:24.215627" elapsed="0.000047"/>
 </return>
-<msg time="2024-05-08T10:25:51.319522" level="INFO">${result} = ['standard_user', 'secret_sauce']</msg>
+<msg time="2024-05-08T11:50:24.215825" level="INFO">${result} = ['standard_user', 'secret_sauce']</msg>
 <var>${result}</var>
 <arg>${filepath}</arg>
 <arg>Sheet1</arg>
 <arg>2</arg>
 <arg>1</arg>
 <arg>2</arg>
-<status status="PASS" start="2024-05-08T10:25:51.306161" elapsed="0.013396"/>
+<status status="PASS" start="2024-05-08T11:50:24.207427" elapsed="0.008423"/>
 </kw>
 <kw name="Set Variable" owner="BuiltIn">
-<msg time="2024-05-08T10:25:51.320034" level="INFO">${username} = standard_user</msg>
+<msg time="2024-05-08T11:50:24.216215" level="INFO">${username} = standard_user</msg>
 <var>${username}</var>
 <arg>${result}[0]</arg>
 <doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="PASS" start="2024-05-08T10:25:51.319788" elapsed="0.000281"/>
+<status status="PASS" start="2024-05-08T11:50:24.216021" elapsed="0.000222"/>
 </kw>
 <kw name="Set Variable" owner="BuiltIn">
-<msg time="2024-05-08T10:25:51.320466" level="INFO">${password} = secret_sauce</msg>
+<msg time="2024-05-08T11:50:24.216539" level="INFO">${password} = secret_sauce</msg>
 <var>${password}</var>
 <arg>${result}[1]</arg>
 <doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="PASS" start="2024-05-08T10:25:51.320262" elapsed="0.000237"/>
+<status status="PASS" start="2024-05-08T11:50:24.216391" elapsed="0.000172"/>
 </kw>
 <kw name="Log" owner="BuiltIn">
-<msg time="2024-05-08T10:25:51.320851" level="INFO">standard_user</msg>
+<msg time="2024-05-08T11:50:24.216829" level="INFO">standard_user</msg>
 <arg>${username}</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2024-05-08T10:25:51.320683" elapsed="0.000223"/>
+<status status="PASS" start="2024-05-08T11:50:24.216705" elapsed="0.000168"/>
 </kw>
 <kw name="Log" owner="BuiltIn">
-<msg time="2024-05-08T10:25:51.321225" level="INFO">secret_sauce</msg>
+<msg time="2024-05-08T11:50:24.217103" level="INFO">secret_sauce</msg>
 <arg>${password}</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2024-05-08T10:25:51.321072" elapsed="0.000206"/>
+<status status="PASS" start="2024-05-08T11:50:24.216995" elapsed="0.000146"/>
 </kw>
-<kw name="Setup Browser">
+<kw name="Open my Browser" owner="login_test">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2024-05-08T10:25:51.322646" level="INFO">Opening browser 'Chrome' to base url 'https://www.saucedemo.com/'.</msg>
+<msg time="2024-05-08T11:50:24.217770" level="INFO">Opening browser 'Chrome' to base url 'https://www.saucedemo.com/'.</msg>
 <arg>${URL}</arg>
-<arg>Chrome</arg>
+<arg>browser=${BROWSER}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2024-05-08T10:25:51.322208" elapsed="2.959667"/>
+<status status="PASS" start="2024-05-08T11:50:24.217552" elapsed="2.625110"/>
 </kw>
-<kw name="Maximize Browser Window" owner="SeleniumLibrary">
-<doc>Maximizes current browser window.</doc>
-<status status="PASS" start="2024-05-08T10:25:54.282787" elapsed="0.384212"/>
+<kw name="Set Window Position" owner="SeleniumLibrary">
+<arg>0</arg>
+<arg>0</arg>
+<doc>Sets window position using ``x`` and ``y`` coordinates.</doc>
+<status status="PASS" start="2024-05-08T11:50:26.843496" elapsed="0.325218"/>
 </kw>
-<status status="PASS" start="2024-05-08T10:25:51.321536" elapsed="3.345637"/>
+<kw name="Set Window Size" owner="SeleniumLibrary">
+<arg>960</arg>
+<arg>1000</arg>
+<doc>Sets current windows size to given ``width`` and ``height``.</doc>
+<status status="PASS" start="2024-05-08T11:50:27.168928" elapsed="0.071051"/>
 </kw>
+<status status="PASS" start="2024-05-08T11:50:24.217311" elapsed="3.022851"/>
+</kw>
+<kw name="Input username" owner="login_test">
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-05-08T10:25:54.668643" level="INFO">Typing text 'standard_user' into text field 'id=user-name'.</msg>
+<msg time="2024-05-08T11:50:27.242538" level="INFO">Typing text 'standard_user' into text field 'id=user-name'.</msg>
 <arg>id=user-name</arg>
 <arg>${username}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-05-08T10:25:54.667460" elapsed="0.286059"/>
+<status status="PASS" start="2024-05-08T11:50:27.241864" elapsed="0.263321"/>
 </kw>
+<arg>${username}</arg>
+<status status="PASS" start="2024-05-08T11:50:27.240880" elapsed="0.264454"/>
+</kw>
+<kw name="Input pwd" owner="login_test">
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-05-08T10:25:54.954263" level="INFO">Typing text 'secret_sauce' into text field 'id=password'.</msg>
+<msg time="2024-05-08T11:50:27.506475" level="INFO">Typing text 'secret_sauce' into text field 'id=password'.</msg>
 <arg>id=password</arg>
 <arg>${password}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-05-08T10:25:54.953940" elapsed="0.112404"/>
+<status status="PASS" start="2024-05-08T11:50:27.505981" elapsed="0.105133"/>
 </kw>
+<arg>${password}</arg>
+<status status="PASS" start="2024-05-08T11:50:27.505635" elapsed="0.105646"/>
+</kw>
+<kw name="Click login button" owner="login_test">
 <kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2024-05-08T10:25:55.067410" level="INFO">Clicking button 'id=login-button'.</msg>
+<msg time="2024-05-08T11:50:27.612156" level="INFO">Clicking button 'id=login-button'.</msg>
 <arg>id=login-button</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2024-05-08T10:25:55.066866" elapsed="0.126716"/>
+<status status="PASS" start="2024-05-08T11:50:27.611917" elapsed="0.122430"/>
+</kw>
+<status status="PASS" start="2024-05-08T11:50:27.611555" elapsed="0.123014"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2024-05-08T10:25:57.194651" level="INFO">Slept 2 seconds.</msg>
+<msg time="2024-05-08T11:50:29.735482" level="INFO">Slept 2 seconds.</msg>
 <arg>2s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2024-05-08T10:25:55.193992" elapsed="2.000764"/>
+<status status="PASS" start="2024-05-08T11:50:27.734994" elapsed="2.000590"/>
+</kw>
+<kw name="Welcome page should be visible" owner="login_test">
+<kw name="Page Should Contain Element" owner="SeleniumLibrary">
+<msg time="2024-05-08T11:50:29.745682" level="INFO">Current page contains element 'xpath=//*[@id="shopping_cart_container"]'.</msg>
+<arg>xpath=//*[@id="shopping_cart_container"]</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<status status="PASS" start="2024-05-08T11:50:29.736147" elapsed="0.009632"/>
+</kw>
+<status status="PASS" start="2024-05-08T11:50:29.735856" elapsed="0.010039"/>
 </kw>
 <kw name="Take Screenshot" owner="Screenshot">
-<msg time="2024-05-08T10:25:57.416571" level="INFO" html="true">&lt;a href="screenshot_1.jpg"&gt;&lt;img src="screenshot_1.jpg" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2024-05-08T11:50:30.031023" level="INFO" html="true">&lt;a href="screenshot_3.jpg"&gt;&lt;img src="screenshot_3.jpg" width="800px"&gt;&lt;/a&gt;</msg>
 <doc>Takes a screenshot in JPEG format and embeds it into the log file.</doc>
-<status status="PASS" start="2024-05-08T10:25:57.194997" elapsed="0.221931"/>
+<status status="PASS" start="2024-05-08T11:50:29.746102" elapsed="0.285239"/>
 </kw>
 <kw name="Close Browser" owner="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" start="2024-05-08T10:25:57.417557" elapsed="0.154317"/>
+<status status="PASS" start="2024-05-08T11:50:30.031932" elapsed="0.158070"/>
 </kw>
-<status status="PASS" start="2024-05-08T10:25:51.305534" elapsed="6.266692"/>
+<status status="PASS" start="2024-05-08T11:50:24.206955" elapsed="5.983545"/>
 </test>
-<status status="PASS" start="2024-05-08T10:25:50.568481" elapsed="7.004372"/>
+<status status="PASS" start="2024-05-08T11:50:23.628235" elapsed="6.562998"/>
 </suite>
 <statistics>
 <total>
@@ -134,10 +162,10 @@
 <tag>
 </tag>
 <suite>
-<stat pass="1" fail="0" skip="0" id="s1" name="Excel One User Credential">Excel One User Credential</stat>
+<stat pass="1" fail="0" skip="0" id="s1" name="Logintest Accepted Users">Logintest Accepted Users</stat>
 </suite>
 </statistics>
 <errors>
-<msg time="2024-05-08T10:25:50.563691" level="WARN">Error in file '/Users/venkatabandi/google_backup/test_automation/robot-test-automation-sauce-demo/Tests/excel_one_user_credential.robot' on line 37: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-05-08T11:50:23.621876" level="WARN">Error in file '/Users/venkatabandi/google_backup/test_automation/robot-test-automation-sauce-demo/Tests/logintest_accepted_users.robot' on line 33: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
 </errors>
 </robot>
