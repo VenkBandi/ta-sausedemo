@@ -44,7 +44,7 @@ This test automation project for Swag Labs utilizes a variety of tools and techn
 
 - **Selenium**: A popular open-source framework for automating web browser interactions and testing.
 
-- **ChromeDriver**: The WebDriver implementation for Google Chrome, enabling Selenium to automate Chrome browser actions.
+- **DataDriver**: The DataDriver implementation for utlising Excel and CSV files for test automation.
 
 
 These technologies are combined to create an effective testing framework that automates test cases, performs comparisons between expected and actual outcomes, and generates detailed test reports.
