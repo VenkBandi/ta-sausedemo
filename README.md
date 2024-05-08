@@ -51,8 +51,8 @@ These technologies are combined to create an effective testing framework that au
 
 
 ## Test Cases
-- ** Excel user credentials **: Excel reading usernames and passwords
-- ** Login Test  accepted user **: Used a resouce file login_test.robot
+- **Excel user credentials**: Excel reading usernames and passwords
+- **Login Test  accepted user**: Used a resouce file login_test.robot
 
 
 ## Installation
