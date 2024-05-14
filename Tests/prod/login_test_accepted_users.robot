@@ -2,7 +2,7 @@
 Library    SeleniumLibrary
 Library    DataDriver    file=../../Data/mock_user_data.xlsx    sheet_name=Sheet1
 
-Resource    ../../Resources/login_test.robot
+Resource    ../../Resources/logintest_common_resources.robot
 
 Suite Teardown    Close Browsers
 Test Template    Valid login

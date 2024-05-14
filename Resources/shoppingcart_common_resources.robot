@@ -1,7 +1,7 @@
 *** Settings ***
 Library     SeleniumLibrary
 
-Resource    logintest_common_resource.robot
+Resource    logintest_common_resources.robot
 
 
 *** Variables ***
