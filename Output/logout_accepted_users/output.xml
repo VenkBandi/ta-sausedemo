@@ -1,100 +1,100 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.0 (Python 3.11.5 on darwin)" generated="2024-05-14T13:07:07.307281" rpa="false" schemaversion="5">
+<robot generator="Robot 7.0 (Python 3.11.5 on darwin)" generated="2024-05-14T13:24:33.387685" rpa="false" schemaversion="5">
 <suite id="s1" name="Logout Accepted Users" source="/Users/venkatabandi/google_backup/ta-sausedemo/ta-sausedemo/Tests/prod/logout_accepted_users.robot">
 <test id="s1-t1" name="Checking logout functionality of accepted users" line="10">
 <kw name="Open loged in Window" owner="logout_common_resource">
 <kw name="Open my Browser" owner="logintest_common_resources">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2024-05-14T13:07:07.472509" level="INFO">Opening browser 'Chrome' to base url 'https://www.saucedemo.com/'.</msg>
+<msg time="2024-05-14T13:24:33.724454" level="INFO">Opening browser 'Chrome' to base url 'https://www.saucedemo.com/'.</msg>
 <arg>${URL}</arg>
 <arg>browser=${BROWSER}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2024-05-14T13:07:07.472274" elapsed="2.300221"/>
+<status status="PASS" start="2024-05-14T13:24:33.724128" elapsed="3.336501"/>
 </kw>
 <kw name="Set Window Position" owner="SeleniumLibrary">
 <arg>0</arg>
 <arg>0</arg>
 <doc>Sets window position using ``x`` and ``y`` coordinates.</doc>
-<status status="PASS" start="2024-05-14T13:07:09.773138" elapsed="0.321276"/>
+<status status="PASS" start="2024-05-14T13:24:37.061299" elapsed="0.330298"/>
 </kw>
 <kw name="Set Window Size" owner="SeleniumLibrary">
 <arg>960</arg>
 <arg>1000</arg>
 <doc>Sets current windows size to given ``width`` and ``height``.</doc>
-<status status="PASS" start="2024-05-14T13:07:10.094638" elapsed="0.068397"/>
+<status status="PASS" start="2024-05-14T13:24:37.391897" elapsed="0.066061"/>
 </kw>
-<status status="PASS" start="2024-05-14T13:07:07.471664" elapsed="2.691562"/>
+<status status="PASS" start="2024-05-14T13:24:33.723265" elapsed="3.734891"/>
 </kw>
 <kw name="Input username" owner="logintest_common_resources">
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-05-14T13:07:10.164474" level="INFO">Typing text 'standard_user' into text field 'id=user-name'.</msg>
+<msg time="2024-05-14T13:24:37.460246" level="INFO">Typing text 'standard_user' into text field 'id=user-name'.</msg>
 <arg>id=user-name</arg>
 <arg>${username}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-05-14T13:07:10.163950" elapsed="0.291796"/>
+<status status="PASS" start="2024-05-14T13:24:37.459233" elapsed="0.222024"/>
 </kw>
 <arg>standard_user</arg>
-<status status="PASS" start="2024-05-14T13:07:10.163511" elapsed="0.292396"/>
+<status status="PASS" start="2024-05-14T13:24:37.458549" elapsed="0.222848"/>
 </kw>
 <kw name="Input pwd" owner="logintest_common_resources">
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-05-14T13:07:10.456883" level="INFO">Typing text 'secret_sauce' into text field 'id=password'.</msg>
+<msg time="2024-05-14T13:24:37.682253" level="INFO">Typing text 'secret_sauce' into text field 'id=password'.</msg>
 <arg>id=password</arg>
 <arg>${password}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-05-14T13:07:10.456519" elapsed="0.111869"/>
+<status status="PASS" start="2024-05-14T13:24:37.681988" elapsed="0.108452"/>
 </kw>
 <arg>secret_sauce</arg>
-<status status="PASS" start="2024-05-14T13:07:10.456173" elapsed="0.112427"/>
+<status status="PASS" start="2024-05-14T13:24:37.681616" elapsed="0.108973"/>
 </kw>
 <kw name="Click login button" owner="logintest_common_resources">
 <kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2024-05-14T13:07:10.570721" level="INFO">Clicking button 'id=login-button'.</msg>
+<msg time="2024-05-14T13:24:37.791342" level="INFO">Clicking button 'id=login-button'.</msg>
 <arg>id=login-button</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2024-05-14T13:07:10.570126" elapsed="0.117723"/>
+<status status="PASS" start="2024-05-14T13:24:37.791141" elapsed="0.136738"/>
 </kw>
-<status status="PASS" start="2024-05-14T13:07:10.569122" elapsed="0.118879"/>
+<status status="PASS" start="2024-05-14T13:24:37.790801" elapsed="0.137204"/>
 </kw>
-<status status="PASS" start="2024-05-14T13:07:07.471384" elapsed="3.216709"/>
+<status status="PASS" start="2024-05-14T13:24:33.722870" elapsed="4.205205"/>
 </kw>
 <kw name="Click Logout" owner="logout_common_resource">
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
 <arg>id=${menu}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2024-05-14T13:07:10.689593" elapsed="0.024869"/>
+<status status="PASS" start="2024-05-14T13:24:37.928739" elapsed="0.028538"/>
 </kw>
 <kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2024-05-14T13:07:10.715038" level="INFO">Clicking button 'id=react-burger-menu-btn'.</msg>
+<msg time="2024-05-14T13:24:37.957833" level="INFO">Clicking button 'id=react-burger-menu-btn'.</msg>
 <arg>id=${menu}</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2024-05-14T13:07:10.714746" elapsed="0.068359"/>
+<status status="PASS" start="2024-05-14T13:24:37.957501" elapsed="0.079983"/>
 </kw>
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
 <arg>id=${logout}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2024-05-14T13:07:10.783311" elapsed="0.249358"/>
+<status status="PASS" start="2024-05-14T13:24:38.037693" elapsed="0.244554"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-05-14T13:07:11.033169" level="INFO">Clicking element 'id=logout_sidebar_link'.</msg>
+<msg time="2024-05-14T13:24:38.282696" level="INFO">Clicking element 'id=logout_sidebar_link'.</msg>
 <arg>id=${logout}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-05-14T13:07:11.032876" elapsed="0.044883"/>
+<status status="PASS" start="2024-05-14T13:24:38.282440" elapsed="0.046248"/>
 </kw>
-<status status="PASS" start="2024-05-14T13:07:10.688606" elapsed="0.389302"/>
+<status status="PASS" start="2024-05-14T13:24:37.928413" elapsed="0.400401"/>
 </kw>
 <kw name="Success messege must appear" owner="logout_common_resource">
 <kw name="Page Should Contain" owner="SeleniumLibrary">
-<msg time="2024-05-14T13:07:11.096373" level="INFO">Current page contains text 'Accepted usernames are:'.</msg>
+<msg time="2024-05-14T13:24:38.349571" level="INFO">Current page contains text 'Accepted usernames are:'.</msg>
 <arg>Accepted usernames are:</arg>
 <doc>Verifies that current page contains ``text``.</doc>
-<status status="PASS" start="2024-05-14T13:07:11.078845" elapsed="0.017632"/>
+<status status="PASS" start="2024-05-14T13:24:38.329404" elapsed="0.020270"/>
 </kw>
-<status status="PASS" start="2024-05-14T13:07:11.078277" elapsed="0.018311"/>
+<status status="PASS" start="2024-05-14T13:24:38.329082" elapsed="0.020699"/>
 </kw>
-<status status="PASS" start="2024-05-14T13:07:07.470858" elapsed="3.625999"/>
+<status status="PASS" start="2024-05-14T13:24:33.722149" elapsed="4.627867"/>
 </test>
-<status status="PASS" start="2024-05-14T13:07:07.309013" elapsed="3.788494"/>
+<status status="PASS" start="2024-05-14T13:24:33.389047" elapsed="4.961601"/>
 </suite>
 <statistics>
 <total>
