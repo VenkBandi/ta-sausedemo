@@ -51,8 +51,11 @@ These technologies are combined to create an effective testing framework that au
 
 
 ## Test Cases
-- **Excel user credentials**: Excel reading usernames and passwords
-- **Login Test  accepted user**: Used a resouce file login_test.robot
+| Feature        | As a [role]          | I want [feature]         | So that [benefit]       |
+|----------------|----------------------|--------------------------|-------------------------|
+| Login credential | As a registered user           | I want to log in         | So that I can access the webshopping|
+| Logout | As an user after login      | I want to logout   | So that i can exist the system |
+| Item display| As a customer      | I want to arrange product catergoies | So that I can view their either in alphbetical order or price order |
 
 
 ## Installation
