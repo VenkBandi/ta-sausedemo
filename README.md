@@ -55,7 +55,9 @@ These technologies are combined to create an effective testing framework that au
 |----------------|----------------------|--------------------------|-------------------------|
 | Login credential | As a registered user           | I want to log in         | So that I can access the webshopping|
 | Logout | As an user after login      | I want to logout   | So that i can exist the system |
-| Item display| As a customer      | I want to arrange product catergoies | So that I can view their either in alphbetical order or price order |
+| Product display arrangments in webpage| As a logedin user      | I want to arrange product catergoies | So that I can view products either in alphbetical order or price order |
+| Product display arrangments in webpage| As a logedin user      | I want to arrange product catergoies | So that I can view products either in alphbetical order or price order |
+
 
 
 ## Installation

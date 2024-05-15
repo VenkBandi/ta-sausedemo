@@ -10,8 +10,7 @@ ${BROWSER}      Chrome
 *** Keywords ***
 Open my Browser
     Open Browser    ${URL}    browser=${BROWSER}
-    Set Window Position    0    0
-    Set Window Size    960    1000
+    Maximize Browser Window
 
 Close Browsers
     Close All Browsers
